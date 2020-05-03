@@ -38,7 +38,7 @@
 // 4. Create a function that takes in two arrays of elements, including numbers. If all numbers added together in the first array are equal to all the number inputs added in the second array, return true, otherwise, false. Only add together numeric elements but either array may contain non-numeric elements.
 //
     var arr1 = ['bob', 1, true, 1, 2];
-    // var arr2 = [2, null, undefined, 0, 2, "apple"];
+    var arr2 = [2, null, undefined, 0, 2, "apple"];
 
 function getNumbersFromArrayOne (arr) {
 
@@ -55,7 +55,6 @@ function getNumbersFromArrayOne (arr) {
 }
 
         console.log(getNumbersFromArrayOne(arr1));
-
 
 // exampleFunction(arr1, arr2) // returns true
 //
