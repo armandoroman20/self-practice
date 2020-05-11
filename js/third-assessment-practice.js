@@ -5,43 +5,56 @@
 // ## Problem 1
 //
 // Write a function, ```filterNumbers```, that takes in an array of mixed data types and returns an array of only the number types in ascending order.
+
+//     function returnInAscending (arr) {
+//         var numberArray = [];
+//         arr.forEach(function(element){
+//         if(typeof(element) === "number"){
+//             numberArray.push(element);
+//         }
+//     });
+//     return numberArray;
+// }
 //
-//     Example input:
-//
-//     ```js
-// ["fred", true, 5, 3]
-// ```
-//
-// Example output:
-//
-//     ```js
-// [3, 5]
-// ```
+// console.log(returnInAscending(["fred", true, 5, 3]));
+
+
 //
 // ## Problem 2
 //
 // Write a function, ```getOlder```, that takes in an array of dog objects and increases the value of the age properties by 1. No return value is needed since the original array of objects will be changed by this function.
+
+var dog =[
+    {
+        name: "Chompers",
+        breed: "Pug",
+        age: 7
+    },
+    {
+        name: "Freddy",
+        breed: "Lab",
+        age: 4,
+    },
+    {
+        name: "Mr. Pig",
+        breed: "Mastif",
+        age: 10
+    }
+];
 //
-// Example Input:
 //
-//     ```js
-// [
-// {
-// name: "Chompers",
-// breed: "Pug",
-// age: 7
-// },
-// {
-// name: "Freddy",
-// breed: "Lab",
-// age: 4
-// },
-// {
-// name: "Mr. Pig",
-// breed: "Mastif",
-// age: 10
-// }
-// ];
+function getOlder() {
+    var older = {
+        age: 0
+    };
+    for (var i = 0; i < dog.length; i += 1) {
+        older = dog[i].age+1;
+    }
+    return older
+}
+
+console.log(getOlder());
+
 // ```
 //
 // Example Output:
